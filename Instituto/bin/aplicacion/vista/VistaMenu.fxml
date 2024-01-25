@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aplicacion.vista.ControladorMenu">
+   <children>
+      <Pane layoutY="131.0" prefHeight="153.0" prefWidth="600.0" style="-fx-background-color: #4c80a5;">
+         <children>
+            <ImageView fx:id="imvEstu" fitHeight="108.0" fitWidth="105.0" layoutX="439.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="btnEstudiantes" layoutX="45.0" layoutY="55.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="306.0" style="-fx-background-radius: 50;" text="Estudiantes">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" spread="0.45">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+         </children>
+      </Pane>
+      <Pane layoutY="275.0" prefHeight="132.0" prefWidth="600.0" style="-fx-background-color: #5e92c1;">
+         <children>
+            <Separator layoutX="50.0" layoutY="-2.0" prefWidth="500.0" />
+            <ImageView fx:id="imvCali" fitHeight="108.0" fitWidth="105.0" layoutX="42.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="btnCalificaciones" layoutX="244.0" layoutY="55.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="306.0" style="-fx-background-radius: 50;" text="Calificaciones">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" spread="0.45">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+         </children>
+      </Pane>
+      <Pane layoutY="-13.0" prefHeight="147.0" prefWidth="600.0" style="-fx-background-color: #37677c;">
+         <children>
+            <ImageView fx:id="imvProf" fitHeight="108.0" fitWidth="105.0" layoutX="50.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" />
+            <Separator layoutX="50.0" layoutY="146.0" prefWidth="500.0" />
+            <Button fx:id="btnProfesores" layoutX="242.0" layoutY="56.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="306.0" style="-fx-background-radius: 50;" text="Profesores">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" spread="0.45">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+         </children>
+      </Pane>
+      <Pane layoutX="-4.0" layoutY="407.0" prefHeight="68.0" prefWidth="608.0" style="-fx-background-color: #649cde;">
+         <children>
+            <Separator layoutX="50.0" layoutY="-1.0" prefWidth="500.0" />
+            <Button fx:id="btnAcercaDe" layoutX="50.0" layoutY="31.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="168.0" style="-fx-background-radius: 50; -fx-background-color: #005b44;" text="Acerca de.." textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Reflection />
+               </effect></Button>
+            <Button fx:id="btnSalir" layoutX="382.0" layoutY="29.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="168.0" style="-fx-background-radius: 50; -fx-background-color: #de3030;" text="Salir" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Reflection />
+               </effect></Button>
+            <Separator layoutX="227.0" layoutY="40.0" prefHeight="3.0" prefWidth="62.0" />
+            <Text fill="WHITE" layoutX="296.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="o">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Separator layoutX="313.0" layoutY="40.0" prefHeight="3.0" prefWidth="62.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

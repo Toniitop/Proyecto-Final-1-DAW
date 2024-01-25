@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="197.0" prefWidth="491.0" style="-fx-background-color: #233032;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aplicacion.vista.VistaControladorBarraProgreso">
+   <children>
+      <Pane layoutX="11.0" layoutY="9.0" prefHeight="179.0" prefWidth="468.0" style="-fx-background-color: #4997a4; -fx-background-radius: 20;">
+         <cursor>
+            <Cursor fx:constant="WAIT" />
+         </cursor>
+      </Pane>
+      <ProgressBar fx:id="pgbBarra" layoutX="50.0" layoutY="87.0" prefHeight="57.0" prefWidth="392.0" progress="0.0" style="-fx-background-color: #4997a4; -fx-control-inner-background: #233032;">
+         <cursor>
+            <Cursor fx:constant="WAIT" />
+         </cursor>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" opacity="0.9967938661575317" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ProgressBar>
+      <Text fill="WHITE" layoutX="50.0" layoutY="67.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Accediendo a la aplicacion..." wrappingWidth="352.9140625">
+         <font>
+            <Font name="System Italic" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="WAIT" />
+         </cursor>
+      </Text>
+   </children>
+   <cursor>
+      <Cursor fx:constant="WAIT" />
+   </cursor>
+</AnchorPane>

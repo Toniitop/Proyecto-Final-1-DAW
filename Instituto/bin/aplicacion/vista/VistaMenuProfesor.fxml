@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="871.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aplicacion.vista.VistaControladorMenuProfesor">
+   <children>
+      <BorderPane prefHeight="539.0" prefWidth="871.0">
+         <top>
+            <TableView fx:id="tbvMenuProfesores" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="tbcId" prefWidth="57.0" text="id" />
+                <TableColumn fx:id="tbcNombre" prefWidth="100.0" text="Nombre" />
+                  <TableColumn fx:id="tbcApellido" prefWidth="100.0" text="Apellido" />
+                  <TableColumn fx:id="tbcAsignatura" prefWidth="100.0" text="Asignatura" />
+                  <TableColumn fx:id="tbcDni" prefWidth="100.0" text="DNI" />
+                  <TableColumn fx:id="tbcDireccion" prefWidth="100.0" text="Dirección" />
+                  <TableColumn fx:id="tbcTelefono" prefWidth="100.0" text="Teléfono" />
+                  <TableColumn fx:id="tbcEmail" prefWidth="212.0" text="Email" />
+              </columns>
+            </TableView>
+         </top>
+         <center>
+            <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+              <tabs>
+                <Tab text="Nuevo Profesor">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Pane layoutX="14.0" layoutY="14.0" prefHeight="283.0" prefWidth="845.0" style="-fx-background-color: #335e6f; -fx-background-radius: 25;">
+                                 <children>
+                                    <TextField fx:id="txfNombre" layoutX="96.0" layoutY="20.0">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor></TextField>
+                                    <TextField fx:id="txfApellido" layoutX="96.0" layoutY="74.0">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor></TextField>
+                                    <TextField fx:id="txfDni" layoutX="96.0" layoutY="134.0" prefHeight="25.0" prefWidth="150.0">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor></TextField>
+                                    <TextField fx:id="txfTelefono" layoutX="96.0" layoutY="192.0" prefHeight="25.0" prefWidth="150.0">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor></TextField>
+                                    <TextField fx:id="txfEmail" layoutX="389.0" layoutY="121.0" prefHeight="25.0" prefWidth="410.0">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor></TextField>
+                                    <TextField fx:id="txfDireccion" layoutX="389.0" layoutY="67.0" prefHeight="25.0" prefWidth="410.0">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor></TextField>
+                                    <Text fill="WHITE" layoutX="25.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:">
+                                       <font>
+                                          <Font name="Verdana" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="25.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido:">
+                                       <font>
+                                          <Font name="Verdana" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="305.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asignatura:">
+                                       <font>
+                                          <Font name="Verdana" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="25.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DNI:">
+                                       <font>
+                                          <Font name="Verdana" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="305.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dirección:">
+                                       <font>
+                                          <Font name="Verdana" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="25.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teléfono:">
+                                       <font>
+                                          <Font name="Verdana" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="305.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:">
+                                       <font>
+                                          <Font name="Verdana" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <Button fx:id="btnInsertar" layoutX="395.0" layoutY="217.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="260.0" style="-fx-background-radius: 15;" text="Insertar">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <effect>
+                                          <DropShadow spread="0.31">
+                                             <color>
+                                                <Color red="1.0" green="1.0" blue="1.0" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect></Button>
+                                    <Button fx:id="btnSalir" layoutX="675.0" layoutY="217.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="123.0" style="-fx-background-radius: 15; -fx-background-color: #de3030;" text="Salir" textFill="WHITE">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <effect>
+                                          <Reflection />
+                                       </effect></Button>
+                                    <ChoiceBox fx:id="chbAsignaturas" layoutX="389.0" layoutY="20.0" prefHeight="25.0" prefWidth="410.0" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Actualizar Profesor">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Pane layoutX="13.0" layoutY="14.0" prefHeight="283.0" prefWidth="845.0" style="-fx-background-color: #598bb7; -fx-background-radius: 25;">
+                                 <children>
+                                    <TextField fx:id="txfNombre1" layoutX="96.0" layoutY="20.0">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor></TextField>
+                                    <TextField fx:id="txfApellido1" layoutX="96.0" layoutY="74.0">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor></TextField>
+                                    <TextField fx:id="txfDni1" layoutX="96.0" layoutY="134.0" prefHeight="25.0" prefWidth="150.0">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor></TextField>
+                                    <TextField fx:id="txfTelefono1" layoutX="96.0" layoutY="192.0" prefHeight="25.0" prefWidth="150.0">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor></TextField>
+                                    <TextField fx:id="txfEmail1" layoutX="389.0" layoutY="121.0" prefHeight="25.0" prefWidth="410.0">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor></TextField>
+                                    <TextField fx:id="txfDireccion1" layoutX="389.0" layoutY="67.0" prefHeight="25.0" prefWidth="410.0">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor></TextField>
+                                    <Text fill="WHITE" layoutX="25.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:">
+                                       <font>
+                                          <Font name="Verdana" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="25.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido:">
+                                       <font>
+                                          <Font name="Verdana" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="305.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asignatura:">
+                                       <font>
+                                          <Font name="Verdana" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="25.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DNI:">
+                                       <font>
+                                          <Font name="Verdana" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="305.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dirección:">
+                                       <font>
+                                          <Font name="Verdana" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="25.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teléfono:">
+                                       <font>
+                                          <Font name="Verdana" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="305.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:">
+                                       <font>
+                                          <Font name="Verdana" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <Button fx:id="btnActualizar" layoutX="395.0" layoutY="217.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="260.0" style="-fx-background-radius: 15;" text="Actualizar">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <effect>
+                                          <DropShadow spread="0.31">
+                                             <color>
+                                                <Color red="1.0" green="1.0" blue="1.0" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect></Button>
+                                    <Button fx:id="btnSalir1" layoutX="675.0" layoutY="217.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="123.0" style="-fx-background-radius: 15; -fx-background-color: #de3030;" text="Salir" textFill="WHITE">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <effect>
+                                          <Reflection />
+                                       </effect></Button>
+                                    <ChoiceBox fx:id="chbAsignaturas1" layoutX="389.0" layoutY="20.0" prefHeight="25.0" prefWidth="410.0" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="Eliminar Profesor">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Pane layoutX="13.0" layoutY="14.0" prefHeight="283.0" prefWidth="845.0" style="-fx-background-color: #649dce; -fx-background-radius: 25;">
+                                 <children>
+                                    <TextField fx:id="txfNombre2" layoutX="96.0" layoutY="20.0">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor></TextField>
+                                    <TextField fx:id="txfApellido2" layoutX="96.0" layoutY="74.0">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor></TextField>
+                                    <TextField fx:id="txfAsignatura2" layoutX="388.0" layoutY="20.0" prefHeight="25.0" prefWidth="410.0">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor></TextField>
+                                    <TextField fx:id="txfDni2" layoutX="96.0" layoutY="134.0" prefHeight="25.0" prefWidth="148.0">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor></TextField>
+                                    <TextField fx:id="txfTelefono2" layoutX="96.0" layoutY="192.0" prefHeight="25.0" prefWidth="149.0">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor></TextField>
+                                    <TextField fx:id="txfEmail2" layoutX="389.0" layoutY="121.0" prefHeight="25.0" prefWidth="410.0">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor></TextField>
+                                    <TextField fx:id="txfDireccion2" layoutX="389.0" layoutY="67.0" prefHeight="25.0" prefWidth="410.0">
+                                       <cursor>
+                                          <Cursor fx:constant="TEXT" />
+                                       </cursor></TextField>
+                                    <Text fill="WHITE" layoutX="25.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:">
+                                       <font>
+                                          <Font name="Verdana" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="25.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellido:">
+                                       <font>
+                                          <Font name="Verdana" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="305.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asignatura:">
+                                       <font>
+                                          <Font name="Verdana" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="25.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DNI:">
+                                       <font>
+                                          <Font name="Verdana" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="305.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dirección:">
+                                       <font>
+                                          <Font name="Verdana" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="23.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teléfono:">
+                                       <font>
+                                          <Font name="Verdana" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="305.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:">
+                                       <font>
+                                          <Font name="Verdana" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <Button fx:id="btnEliminar" layoutX="395.0" layoutY="217.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="260.0" style="-fx-background-radius: 15;" text="Eliminar">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <effect>
+                                          <DropShadow spread="0.31">
+                                             <color>
+                                                <Color red="1.0" green="1.0" blue="1.0" />
+                                             </color>
+                                          </DropShadow>
+                                       </effect></Button>
+                                    <Button fx:id="btnSalir2" layoutX="675.0" layoutY="217.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="123.0" style="-fx-background-radius: 15; -fx-background-color: #de3030;" text="Salir" textFill="WHITE">
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                       <effect>
+                                          <Reflection />
+                                       </effect></Button>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

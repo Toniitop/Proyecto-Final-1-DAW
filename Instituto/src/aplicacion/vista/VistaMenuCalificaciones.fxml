@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="871.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aplicacion.vista.VistaControladorMenuCalificaciones">
+   <children>
+      <TableView fx:id="tbvMenuCalificaciones" layoutX="12.0" layoutY="7.0" prefHeight="263.0" prefWidth="848.0">
+        <columns>
+          <TableColumn fx:id="tbcIdProfesor" prefWidth="75.0" text="id Profesor" />
+          <TableColumn fx:id="tbcNombre" prefWidth="185.0" text="Nombre" />
+            <TableColumn fx:id="tbcApellido" prefWidth="185.0" text="Apellido" />
+            <TableColumn fx:id="tbcAsignatura" prefWidth="164.0" text="Asignatura" />
+            <TableColumn fx:id="tbcNota" prefWidth="46.0" text="Nota" />
+            <TableColumn fx:id="tbcFecha" prefWidth="97.0" text="Fecha" />
+            <TableColumn fx:id="tbcAsistencia" prefWidth="95.0" text="Asistencia" />
+        </columns>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TableView>
+      <Pane layoutX="408.0" layoutY="282.0" prefHeight="246.0" prefWidth="452.0" style="-fx-background-color: #335e6f; -fx-background-radius: 25;">
+         <children>
+            <CheckBox fx:id="cbAsistencia" layoutX="138.0" layoutY="217.0" mnemonicParsing="false" text="No" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></CheckBox>
+            <ChoiceBox fx:id="chbDniProfesor" layoutX="101.0" layoutY="14.0" prefHeight="25.0" prefWidth="149.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ChoiceBox>
+            <Text fill="WHITE" layoutX="14.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asistencia a clase:">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="14.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha:">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Text>
+            <DatePicker fx:id="dtpFecha" layoutX="101.0" layoutY="175.0" prefHeight="25.0" prefWidth="149.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </DatePicker>
+            <Text fill="WHITE" layoutX="14.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nota:">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txfNota" layoutX="101.0" layoutY="135.0" prefHeight="25.0" prefWidth="149.0">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <Text fill="WHITE" layoutX="12.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DNI Alumno:" wrappingWidth="82.60546875">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="chbDniAlumno" layoutX="101.0" layoutY="55.0" prefHeight="25.0" prefWidth="149.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ChoiceBox>
+            <Text fill="WHITE" layoutX="12.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asignatura:" wrappingWidth="70.72265625">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="chbAsignaturas" layoutX="101.0" layoutY="95.0" prefHeight="25.0" prefWidth="149.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ChoiceBox>
+         </children>
+      </Pane>
+      <Text fill="WHITE" layoutX="423.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DNI Profesor:">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+      </Text>
+      <Separator layoutX="394.0" layoutY="282.0" orientation="VERTICAL" prefHeight="246.0" prefWidth="6.0" />
+      <Button fx:id="btnInsertar" layoutX="699.0" layoutY="302.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" style="-fx-background-radius: 15;" text="Insertar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow spread="0.21">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color></DropShadow>
+         </effect></Button>
+      <Button fx:id="btnEliminar" layoutX="699.0" layoutY="408.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" style="-fx-background-radius: 15;" text="Eliminar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow spread="0.21">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color></DropShadow>
+         </effect></Button>
+      <Button fx:id="btnModificar" layoutX="699.0" layoutY="354.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" style="-fx-background-radius: 15;" text="Modificar">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow spread="0.21">
+               <color>
+                  <Color red="1.0" green="1.0" blue="1.0" />
+               </color></DropShadow>
+         </effect></Button>
+      <Button fx:id="btnSalir" layoutX="699.0" layoutY="472.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #de3030; -fx-background-radius: 15;" text="Salir" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Reflection />
+         </effect></Button>
+      <Separator layoutX="675.0" layoutY="287.0" orientation="VERTICAL" prefHeight="235.0" prefWidth="6.0" />
+      <BarChart fx:id="bcGrafico" layoutX="12.0" layoutY="279.0" prefHeight="246.0" prefWidth="365.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" fx:id="xAxisBarChart" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="yAxisBarChart" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Button fx:id="btnActu" layoutX="340.0" layoutY="282.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="37.0" style="-fx-background-radius: 15; -fx-background-color: #f28343;" text="F5" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" spread="0.08">
+               <color>
+                  <Color red="0.9399999976158142" green="0.5000799894332886" blue="0.2632000148296356" opacity="0.8587786555290222" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
